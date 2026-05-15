@@ -2,565 +2,660 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Bhoomika N | Portfolio</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      scroll-behavior: smooth;
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      scroll-behavior:smooth;
     }
 
-    body {
-      font-family: 'Poppins', sans-serif;
-      background: linear-gradient(135deg, #0f172a, #1e1b4b, #111827);
-      color: white;
-      line-height: 1.6;
+    body{
+      font-family:'Poppins',sans-serif;
+      background:linear-gradient(135deg,#0f172a,#1e1b4b,#111827);
+      color:white;
+      line-height:1.6;
     }
 
-    a {
-      text-decoration: none;
-      color: inherit;
+    a{
+      text-decoration:none;
+      color:inherit;
     }
 
-    section {
-      padding: 80px 10%;
+    section{
+      padding:80px 10%;
     }
 
-    .container {
-      max-width: 1200px;
-      margin: auto;
+    .container{
+      max-width:1200px;
+      margin:auto;
     }
 
-    .hero {
-      height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      padding: 20px;
+    .hero{
+      height:100vh;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      text-align:center;
+      padding:20px;
     }
 
-    .hero-card {
-      background: rgba(255, 255, 255, 0.08);
-      border: 1px solid rgba(255, 255, 255, 0.15);
-      backdrop-filter: blur(12px);
-      padding: 50px;
-      border-radius: 25px;
-      max-width: 850px;
-      box-shadow: 0 8px 40px rgba(0,0,0,0.4);
+    .hero-card{
+      background:rgba(255,255,255,0.08);
+      border:1px solid rgba(255,255,255,0.15);
+      backdrop-filter:blur(12px);
+      padding:50px;
+      border-radius:25px;
+      max-width:850px;
+      box-shadow:0 8px 40px rgba(0,0,0,0.4);
     }
 
-    .hero h1 {
-      font-size: 4rem;
-      font-weight: 800;
-      background: linear-gradient(to right, #22d3ee, #c084fc);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      margin-bottom: 15px;
+    .hero h1{
+      font-size:4rem;
+      font-weight:800;
+      background:linear-gradient(to right,#22d3ee,#c084fc);
+      -webkit-background-clip:text;
+      -webkit-text-fill-color:transparent;
+      margin-bottom:15px;
     }
 
-    .hero p {
-      font-size: 1.2rem;
-      color: #d1d5db;
-      margin-bottom: 15px;
+    .hero p{
+      font-size:1.1rem;
+      color:#d1d5db;
+      margin-bottom:15px;
     }
 
-    .hero-links {
-      margin-top: 20px;
+    .hero-links{
+      margin-top:25px;
     }
 
-    .hero-links a {
-      display: inline-block;
-      margin: 10px;
-      padding: 12px 24px;
-      border-radius: 30px;
-      font-weight: 600;
-      transition: 0.3s;
+    .hero-links a{
+      display:inline-block;
+      margin:10px;
+      padding:12px 24px;
+      border-radius:30px;
+      font-weight:600;
+      transition:0.3s;
     }
 
-    .btn-primary {
-      background: #06b6d4;
-      color: white;
+    .btn-primary{
+      background:#06b6d4;
+      color:white;
     }
 
-    .btn-primary:hover {
-      background: #0891b2;
-      transform: translateY(-3px);
+    .btn-primary:hover{
+      background:#0891b2;
+      transform:translateY(-3px);
     }
 
-    .btn-secondary {
-      border: 1px solid #c084fc;
-      color: white;
+    .section-title{
+      text-align:center;
+      font-size:2.5rem;
+      margin-bottom:50px;
+      color:#22d3ee;
+      font-weight:700;
     }
 
-    .btn-secondary:hover {
-      background: rgba(192, 132, 252, 0.2);
-      transform: translateY(-3px);
+    .card{
+      background:rgba(255,255,255,0.08);
+      border:1px solid rgba(255,255,255,0.12);
+      border-radius:25px;
+      padding:35px;
+      backdrop-filter:blur(12px);
+      transition:0.3s ease;
+      box-shadow:0 6px 25px rgba(0,0,0,0.25);
     }
 
-    .section-title {
-      text-align: center;
-      font-size: 2.5rem;
-      margin-bottom: 50px;
-      color: #22d3ee;
-      font-weight: 700;
-    }
-
-    .card {
-      background: rgba(255,255,255,0.08);
-      border: 1px solid rgba(255,255,255,0.12);
-      border-radius: 25px;
-      padding: 35px;
-      backdrop-filter: blur(12px);
-      transition: 0.3s ease;
-      box-shadow: 0 6px 25px rgba(0,0,0,0.25);
-    }
-
-    .card:hover {
-      transform: translateY(-8px);
-    }
-
-    .about p {
-      color: #d1d5db;
-      font-size: 1.05rem;
-      line-height: 1.9;
-    }
-
-    .education-details {
-      margin-top: 10px;
-      color: #d1d5db;
+    .card:hover{
+      transform:translateY(-8px);
     }
 
     .skills-grid,
     .projects-grid,
-    .cert-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 25px;
+    .cert-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+      gap:25px;
     }
 
-    .skill-tags {
-      margin-top: 20px;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 12px;
+    .skill-tags{
+      margin-top:20px;
+      display:flex;
+      flex-wrap:wrap;
+      gap:12px;
     }
 
-    .tag {
-      padding: 10px 18px;
-      border-radius: 25px;
-      background: rgba(6,182,212,0.2);
-      border: 1px solid #22d3ee;
-      font-size: 0.9rem;
+    .tag{
+      padding:10px 18px;
+      border-radius:25px;
+      background:rgba(6,182,212,0.2);
+      border:1px solid #22d3ee;
+      font-size:0.9rem;
     }
 
-    .project-type {
-      display: inline-block;
-      padding: 8px 16px;
-      border-radius: 20px;
-      background: rgba(192,132,252,0.2);
-      border: 1px solid #c084fc;
-      margin-bottom: 18px;
-      font-size: 0.9rem;
+    .project-type{
+      display:inline-block;
+      padding:8px 16px;
+      border-radius:20px;
+      background:rgba(192,132,252,0.2);
+      border:1px solid #c084fc;
+      margin-bottom:18px;
+      font-size:0.9rem;
     }
 
-    .project-title {
-      font-size: 1.5rem;
-      color: #c084fc;
-      margin-bottom: 15px;
-      font-weight: 600;
+    .project-title{
+      font-size:1.5rem;
+      color:#c084fc;
+      margin-bottom:15px;
+      font-weight:600;
     }
 
-    .project-features {
-      margin-top: 18px;
-      margin-bottom: 18px;
+    .project-features{
+      margin-top:18px;
+      margin-bottom:18px;
     }
 
-    .project-features li {
-      margin-bottom: 8px;
-      color: #d1d5db;
+    .project-features li{
+      margin-bottom:8px;
+      color:#d1d5db;
     }
 
-    .cert-item {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      color: #e5e7eb;
+    .cert-item{
+      display:flex;
+      align-items:center;
+      gap:10px;
+      color:#e5e7eb;
+      transition:0.3s;
     }
 
-    .research-card {
-      margin-bottom: 25px;
+    .cert-item:hover{
+      background:rgba(6,182,212,0.2);
+      border:1px solid #22d3ee;
     }
 
-    .contact {
-      text-align: center;
+    footer{
+      text-align:center;
+      padding:30px;
+      border-top:1px solid rgba(255,255,255,0.1);
+      color:#9ca3af;
     }
 
-    .contact p {
-      margin: 15px 0;
-      color: #d1d5db;
-      font-size: 1.1rem;
-    }
+    @media(max-width:768px){
 
-    .contact a {
-      color: #22d3ee;
-    }
-
-    footer {
-      text-align: center;
-      padding: 30px;
-      border-top: 1px solid rgba(255,255,255,0.1);
-      color: #9ca3af;
-    }
-
-    @media(max-width: 768px) {
-      .hero h1 {
-        font-size: 2.8rem;
+      .hero h1{
+        font-size:2.7rem;
       }
 
-      .section-title {
-        font-size: 2rem;
+      .section-title{
+        font-size:2rem;
       }
 
-      section {
-        padding: 70px 7%;
+      section{
+        padding:70px 7%;
       }
 
-      .hero-card {
-        padding: 35px 25px;
+      .hero-card{
+        padding:35px 25px;
       }
     }
+
   </style>
 </head>
+
 <body>
 
-  <!-- HERO SECTION -->
-  <section class="hero">
-    <div class="hero-card">
-      <h1>BHOOMIKA N</h1>
+<!-- HERO SECTION -->
 
-      <p>Information Science & Engineering</p>
+<section class="hero">
 
-      <p>📧 nanjappabhoomika@gmail.com</p>
-      <p>📱 +91 8147199579</p>
+  <div class="hero-card">
 
-      <p>
-        🔗 <a href="https://www.linkedin.com/in/bhoomika-n-4470963a5/" target="_blank">
-          LinkedIn Profile
-        </a>
-        <a><p>
-  💻 
-  <a href="https://github.com/bhoomikananjappa" target="_blank">
-    GitHub Profile
-  </a>
-</p></a>
+    <h1>BHOOMIKA N</h1>
 
+    <p>Information Science and Engineering</p>
 
-      </p>
+    <p>📧 nanjappabhoomika@gmail.com</p>
 
-      <div class="hero-links">
-        <a href="#projects" class="btn-primary">View Projects</a>
-        <a href="#Certifications & Achievements" class="btn-primary">View Certifications & Achievements</a>
-      </div>
-    </div>
-  </section>
+    <p>📱 +91 8147199579</p>
 
-  <!-- ABOUT -->
-  <section class="about container">
-    <h2 class="section-title">About Me</h2>
+    <p>
+      🔗 
+      <a href="https://www.linkedin.com/in/bhoomika-n-4470963a5/" target="_blank">
+        LinkedIn Profile
+      </a>
+    </p>
 
-    <div class="card">
-      <p>
-        I am an aspiring software developer and AI enthusiast currently pursuing a Bachelor of Engineering in Information Science.
-        I enjoy building innovative applications using Python, SQL, Blockchain, Web Development, and Cloud technologies.
-        I am passionate about learning new technologies and solving real-world problems through creative and intelligent solutions.
-      </p>
-    </div>
-  </section>
+    <p>
+      💻 
+      <a href="https://github.com/bhoomikananjappa" target="_blank">
+        GitHub Profile
+      </a>
+    </p>
 
-  <!-- EDUCATION -->
-  <section class="container">
-    <h2 class="section-title">Education</h2>
+    <div class="hero-links">
 
-    <div class="card">
-      <h3 style="font-size: 1.8rem; color: #c084fc;">Channabasaveshwara Institute of Technology</h3>
+      <a href="#projects" class="btn-primary">
+        View Projects
+      </a>
 
-      <div class="education-details">
-        <p>Bachelor of Engineering in Information Science</p>
-        <p>📍 Karnataka, India</p>
-        <p>📅 2021 - 2025</p>
-        <p>🎓 CGPA: 7.4</p>
-        
-        <div class="education-details">
-          <p>Seshadripuram PU College</p>
-          <p>📍 Karnataka, India</p>
-          <p>📅 2021</p>
-          <p>🎓 Percentage: 75.16 %</p>
+      <a href="#certifications" class="btn-primary">
+        View Certifications
+      </a>
 
-        <div class="education-details">
-          <p>Shree Siddaganga High School </p>
-          <p>📍 Karnataka, India</p>
-          <p>📅 2019</p>
-          <p>🎓 Percentage: 80.16 %</p>      </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- SKILLS -->
-  <section class="container">
-    <h2 class="section-title">Skills</h2>
-
-    <div class="skills-grid">
-
-      <div class="card">
-        <h3>Programming Languages</h3>
-        <div class="skill-tags">
-          <span class="tag">Python</span>
-          <span class="tag">SQL</span>
-        </div>
-      </div>
-
-      <div class="card">
-        <h3>Front-End Development</h3>
-        <div class="skill-tags">
-          <span class="tag">HTML</span>
-          <span class="tag">CSS</span>
-        </div>
-      </div>
-
-      <div class="card">
-        <h3>Database & Tools</h3>
-        <div class="skill-tags">
-          <span class="tag">MySQL</span>
-          <span class="tag">Git</span>
-          <span class="tag">GitHub</span>
-        </div>
+      <a href="#research" class="btn-primary">
+        View Research Publications
+      </a>
 
     </div>
-  </section>
 
-  <!-- INTERNSHIP -->
-  <section class="container">
-    <h2 class="section-title">Internship Experience</h2>
+  </div>
 
-    <div class="card">
-      <h3 style="font-size: 1.7rem; color: #c084fc;">
-        Skillphul Business Toys Private Limited
-      </h3>
+</section>
 
-      <p style="margin-top: 10px; color: #9ca3af;">
-        Bangalore | Sep 2024 - Dec 2024
-      </p>
+<!-- ABOUT -->
 
-      <h4 style="margin-top: 25px; color: #22d3ee; font-size: 1.2rem;">
-        Ethical AI for Fake News Detection
-      </h4>
-
-      <p style="margin-top: 15px; color: #d1d5db;">
-        Worked on a project focused on developing machine learning concepts for detecting misinformation online while maintaining fairness, accountability, and transparency in AI systems.
-      </p>
-    </div>
-  </section>
-  <!-- WORK EXPERIENCE -->
 <section class="container">
+
+  <h2 class="section-title">About Me</h2>
+
+  <div class="card">
+
+    <p>
+      I am a Software Developer with a Bachelor’s degree in Information Science and Engineering.
+      I have experience building projects using Python, SQL, HTML, CSS, JavaScript, and related technologies.
+      I am passionate about developing practical and innovative solutions, improving my technical skills, and exploring new technologies.
+      I am especially interested in learning AI tools and applying them to create smart and efficient applications.
+    </p>
+
+  </div>
+
+</section>
+
+<!-- EDUCATION -->
+
+<section class="container">
+
+  <h2 class="section-title">Education</h2>
+
+  <div class="card">
+
+    <h3 style="font-size:1.8rem;color:#c084fc;">
+      Channabasaveshwara Institute of Technology
+    </h3>
+
+    <p>Bachelor of Engineering in Information Science</p>
+    <p>📍 Karnataka, India</p>
+    <p>📅 2021 - 2025</p>
+    <p>🎓 CGPA: 7.4</p>
+
+    <br>
+
+    <h3 style="font-size:1.5rem;color:#22d3ee;">
+      Seshadripuram PU College
+    </h3>
+
+    <p>📅 2021</p>
+    <p>🎓 Percentage: 75.16%</p>
+
+    <br>
+
+    <h3 style="font-size:1.5rem;color:#22d3ee;">
+      Shree Siddaganga High School
+    </h3>
+
+    <p>📅 2019</p>
+    <p>🎓 Percentage: 80.16%</p>
+
+  </div>
+
+</section>
+
+<!-- SKILLS -->
+
+<section class="container">
+
+  <h2 class="section-title">Skills</h2>
+
+  <div class="skills-grid">
+
+    <div class="card">
+      <h3>Programming Languages</h3>
+
+      <div class="skill-tags">
+        <span class="tag">Python</span>
+        <span class="tag">SQL</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>Front-End Development</h3>
+
+      <div class="skill-tags">
+        <span class="tag">HTML</span>
+        <span class="tag">CSS</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>Database & Tools</h3>
+
+      <div class="skill-tags">
+        <span class="tag">MySQL</span>
+        <span class="tag">Git</span>
+        <span class="tag">GitHub</span>
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- INTERNSHIP -->
+
+<section class="container">
+
+  <h2 class="section-title">Internship Experience</h2>
+
+  <div class="card">
+
+    <h3 style="font-size:1.7rem;color:#c084fc;">
+      Skillphul Business Toys Private Limited
+    </h3>
+
+    <p style="margin-top:10px;color:#9ca3af;">
+      Bangalore | Sep 2024 - Dec 2024
+    </p>
+
+    <h4 style="margin-top:25px;color:#22d3ee;font-size:1.2rem;">
+      Ethical AI for Fake News Detection
+    </h4>
+
+    <p style="margin-top:15px;color:#d1d5db;">
+      Worked on a project focused on developing machine learning concepts for detecting misinformation online while maintaining fairness, accountability, and transparency in AI systems.
+    </p>
+
+  </div>
+
+</section>
+
+<!-- WORK EXPERIENCE -->
+
+<section class="container">
+
   <h2 class="section-title">Work Experience</h2>
 
   <div class="card">
-    <h3 style="font-size: 1.7rem; color: #c084fc;">
+
+    <h3 style="font-size:1.7rem;color:#c084fc;">
       Software Developer Trainee
     </h3>
 
-    <p style="margin-top: 10px; color: #9ca3af;">
-      Skand Analytics Private Limited | Bengaluru, Karnataka, India | Remote
+    <p style="margin-top:10px;color:#9ca3af;">
+      Skand Analytics Private Limited | Remote
     </p>
 
-    <p style="margin-top: 10px; color: #9ca3af;">
+    <p style="margin-top:10px;color:#9ca3af;">
       Jan 2026 - Present
     </p>
 
-    <h4 style="margin-top: 25px; color: #22d3ee; font-size: 1.2rem;">
+    <h4 style="margin-top:25px;color:#22d3ee;font-size:1.2rem;">
       Trade Assist Bot Project
     </h4>
 
-    <p style="margin-top: 15px; color: #d1d5db; line-height: 1.8;">
-      Contributed to the development of the Trade Assist Bot project, designed to automate trade-related operations and improve workflow efficiency. Worked on implementing features using Python and SQL, supporting data handling, process automation, and user interaction functionalities.
+    <p style="margin-top:15px;color:#d1d5db;">
+      Contributed to the development of the Trade Assist Bot project designed to automate trade-related operations and improve workflow efficiency using Python and SQL.
     </p>
 
-    <p style="margin-top: 15px; color: #d1d5db; line-height: 1.8;">
-      Collaborated with the development team to enhance system performance, reduce manual effort, and improve the overall user experience.
-    </p>
-
-    <div class="skill-tags" style="margin-top: 20px;">
+    <div class="skill-tags">
       <span class="tag">Python</span>
       <span class="tag">SQL</span>
       <span class="tag">Automation</span>
     </div>
+
   </div>
+
 </section>
 
-  <!-- PROJECTS -->
-  <section id="projects" class="container">
-    <h2 class="section-title">Projects</h2>
+<!-- PROJECTS -->
 
-    <div class="projects-grid">
+<section id="projects" class="container">
 
-      <div class="card">
-        <span class="project-type">Major Project</span>
+  <h2 class="section-title">Projects</h2>
 
-        <h3 class="project-title">Blockchain Real-Time Tracking and Verification</h3>
+  <div class="projects-grid">
 
-        <p>
-          Integrated blockchain technology with IoT and GPS systems to enable secure real-time tracking and verification of goods in logistics.
-        </p>
+    <div class="card">
 
-        <ul class="project-features">
-          <li>✔ Real-time shipment monitoring</li>
-          <li>✔ Smart contract automation</li>
-          <li>✔ Tamper-proof logistics records</li>
-          <li>✔ Automated alerts and payments</li>
-        </ul>
+      <span class="project-type">Major Project</span>
 
-        <div class="skill-tags">
-          <span class="tag">Blockchain</span>
-          <span class="tag">IoT</span>
-        </div>
-      </div>
+      <h3 class="project-title">
+        Blockchain Real-Time Tracking and Verification
+      </h3>
 
-      <div class="card">
-        <span class="project-type">Mini Project</span>
-
-        <h3 class="project-title">Expense and Budget Tracker</h3>
-
-        <p>
-          Developed a web-based finance management system using PHP and MySQL for tracking expenses and managing monthly budgets.
-        </p>
-
-        <ul class="project-features">
-          <li>✔ Expense tracking</li>
-          <li>✔ Budget management</li>
-          <li>✔ Dashboard analytics</li>
-          <li>✔ Secure authentication</li>
-        </ul>
-
-        <div class="skill-tags">
-          <span class="tag">PHP</span>
-          <span class="tag">MySQL</span>
-          <span class="tag">HTML</span>
-          <span class="tag">CSS</span>
-        </div>
-      </div>
-
-      <div class="card">
-        <span class="project-type">DBMS Project</span>
-
-        <h3 class="project-title">Food Ordering System</h3>
-
-        <p>
-          Designed an online food ordering platform with menu browsing, online ordering, payments, and admin management features.
-        </p>
-
-        <ul class="project-features">
-          <li>✔ Menu browsing</li>
-          <li>✔ Add to cart</li>
-          <li>✔ Online payment</li>
-          <li>✔ Admin dashboard</li>
-        </ul>
-
-        <div class="skill-tags">
-          <span class="tag">DBMS</span>
-          <span class="tag">SQL</span>
-          <span class="tag">HTML</span>
-          <span class="tag">CSS</span>
-        </div>
-      </div>
+      <p>
+        Integrated blockchain technology with IoT and GPS systems to enable secure real-time tracking and verification of goods in logistics.
+      </p>
 
     </div>
-  </section>
 
-  <!-- CERTIFICATIONS -->
-  <section class="container">
-    <h2 class="section-title">Certifications & Achievements</h2>
+    <div class="card">
 
-    <div class="cert-grid">
+      <span class="project-type">Mini Project</span>
 
-      <div class="card cert-item">🏆 Python for Data Science and Scientific Computing</div>
-      <div class="card cert-item">🏆 Introduction to Cloud Computing</div>
-      <div class="card cert-item">🏆 Innovating with Google Cloud AI</div>
-      <div class="card cert-item">🏆 Git & GitHub Workshop</div>
-      <div class="card cert-item">🏆 Azure Workshop</div>
-      <div class="card cert-item">🏆 Python-Django Framework</div>
-      <div class="card cert-item">🏆 Introduction to Kubernetes</div>
-      <div class="card cert-item">🏆 Software Testing & Selenium Basics</div>
+      <h3 class="project-title">
+        Expense and Budget Tracker
+      </h3>
+
+      <p>
+        Developed a finance management system using PHP and MySQL for tracking expenses and budgets.
+      </p>
 
     </div>
-  </section>
 
-  <!-- RESEARCH -->
-  <section class="container">
-    <h2 class="section-title">Research Publications</h2>
+    <div class="card">
 
-    <div class="card research-card">
+      <span class="project-type">DBMS Project</span>
+
+      <h3 class="project-title">
+        Food Ordering System
+      </h3>
+
+      <p>
+        Designed an online food ordering platform with ordering and payment features.
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- CERTIFICATIONS -->
+
+<section id="certifications" class="container">
+
+  <h2 class="section-title">Certifications</h2>
+
+  <div class="cert-grid">
+
+    <a href="https://drive.google.com/file/d/1GU2pujDrknbsXLqNCje-TcDk_vvtx-fH/view?usp=drive_link" target="_blank" class="card cert-item">
+      🏆 Python for Data Science - Great learning
+    </a>
+
+    <a href="https://drive.google.com/file/d/14EEMH-hsDpsOlOfQyIry3pzfEyLLtnbn/view?usp=drive_link" target="_blank" class="card cert-item">
+      🏆 Introduction to Cloud Computing - simplilearn | skillup 
+    </a>
+
+    <a href="https://drive.google.com/file/d/1Ydrt-0nv-m9VOcrKzTFLWYMqbdi-b2tt/view?usp=drive_link" target="_blank" class="card cert-item">
+      🏆 Innovating with Google Cloud AI - simplilearn | skillup 
+    </a>
+
+    <a href="https://drive.google.com/file/d/1Bb2LrvsHLhT01CxORVm25X08BcLmy4L5/view?usp=drive_link" target="_blank" class="card cert-item">
+      🏆 Git & Github and Azure - Workshop
+    </a>
+
+    <a href="https://drive.google.com/file/d/1uxFXCOjjJ_VV8DJxbjQwQ8Ex45XBUTck/view?usp=drive_link" target="_blank" class="card cert-item">
+      🏆 Python-Django Framework - Workshop
+    </a>
+
+    <a href="https://drive.google.com/file/d/1z3_2I6KqUhGnmh9wH-tSafmXbfhX7XcA/view?usp=drive_link" target="_blank" class="card cert-item">
+      🏆 Introduction to Kubernetes
+    </a>
+
+    <a href="https://drive.google.com/file/d/1oE0cq-h6hYK-NqBYw1Y8FS2-HsicSbFU/view?usp=drive_link" target="_blank" class="card cert-item">
+      🏆 Software Testing - Great learning
+    </a>
+
+    <a href="https://drive.google.com/file/d/14MCcPWMf7vIUPClz32yGfg_VZmw-03Au/view?usp=drive_link" target="_blank" class="card cert-item">
+      🏆 Foundations of Cyber Security - Google Coursera
+    </a>
+
+    <a href="https://drive.google.com/file/d/1O5_V_FG9lBh2zXn4Sbtcqe_8eZqSX5R-/view?usp=drive_link" target="_blank" class="card cert-item">
+      🏆 Scientific Computing with Python - Freecodecamp
+    </a>
+
+    <a href="https://drive.google.com/file/d/1sJsHn3TafBGIqrMHcJyFTx5f0ffwYmFI/view?usp=drive_link" target="_blank" class="card cert-item">
+      🏆 Selenium Basics - Great learning
+    </a>
+
+  </div>
+
+
+  <!-- RESEARCH PUBLICATIONS -->
+
+<section id="research" class="container">
+
+  <h2 class="section-title">Research Publications</h2>
+
+  <div class="projects-grid">
+
+    <!-- FIRST RESEARCH PAPER -->
+
+    <div class="card">
+
       <h3 style="color:#c084fc; margin-bottom:15px;">
         Introduction to Cloud Computing and Application of AI in Cloud Computing
       </h3>
 
-      <p style="color:#d1d5db;">
+      <p style="color:#d1d5db; margin-bottom:25px;">
         Published at IJIRSET, Volume 13, Issue 12, December 2024.
       </p>
+
+      <div class="hero-links">
+
+        <!-- Research Paper Button -->
+
+        <a href="https://drive.google.com/file/d/1cvh0o-i3cByPnQQvMmRDIzuUkgmFOyuu/view?usp=drive_link"
+           target="_blank"
+           class="btn-primary">
+
+          View Research Paper
+
+        </a>
+
+        <!-- Certificate Button -->
+
+        <a href="https://drive.google.com/file/d/18HeDx_EJt5B2a6f3_UEMn9knDbKFs3pA/view?usp=drive_link"
+           target="_blank"
+           class="btn-primary">
+
+          View Certificate
+
+        </a>
+
+      </div>
+
     </div>
 
-    <div class="card research-card">
+    <!-- SECOND RESEARCH PAPER -->
+
+    <div class="card">
+
       <h3 style="color:#c084fc; margin-bottom:15px;">
         Case Study of Malware Attacks
       </h3>
 
-      <p style="color:#d1d5db;">
+      <p style="color:#d1d5db; margin-bottom:25px;">
         Published at IJIRSET, Volume 13, Issue 12, December 2024.
       </p>
-    </div>
-  </section>
 
-  <!-- CONTACT -->
-  <section class="contact container">
-    <h2 class="section-title">Contact Me</h2>
+      <div class="hero-links">
 
-    <div class="card">
-      <p>
-        Open to internships, collaborations, and software development opportunities.
-      </p>
+        <!-- Research Paper Button -->
 
-      <p>📧 nanjappabhoomika@gmail.com</p>
-      <p>📱 +91 8147199579</p>
+        <a href="https://drive.google.com/file/d/1XpG0n7_RopYo4NORzwQSFatZ0lEoNMu8/view?usp=drive_link"
+           target="_blank"
+           class="btn-primary">
 
-      <p>
-        🔗
-        <a href="https://www.linkedin.com/in/bhoomika-n-6a83b7248/" target="_blank">
-          LinkedIn Profile
+          View Research Paper
+
         </a>
-         <a><p>
-  💻 
-  <a href="https://github.com/bhoomikananjappa" target="_blank">
-    GitHub Profile
-  </a>
-</p>
-       
-      </p>
+
+        <!-- Certificate Button -->
+
+        <a href="https://drive.google.com/file/d/18JKSqUs7mNfQZHHNNYv975r9g8_hDrld/view?usp=drive_link"
+           target="_blank"
+           class="btn-primary">
+
+          View Certificate
+
+        </a>
+
+      </div>
 
     </div>
-  </section>
 
-  <!-- FOOTER -->
-  <footer>
-    <p>© 2026 Bhoomika N | Portfolio Website</p>
-  </footer>
+  </div>
+
+</section>
+
+
+<!-- CONTACT -->
+
+<section class="container">
+
+  <h2 class="section-title">Contact</h2>
+
+  <div class="card">
+
+    <p>📧 nanjappabhoomika@gmail.com</p>
+
+    <p>📱 +91 8147199579</p>
+
+    <p>
+      🔗 
+      <a href="https://www.linkedin.com/" target="_blank">
+        LinkedIn Profile
+      </a>
+    </p>
+
+    <p>
+      💻 
+      <a href="https://github.com/bhoomikananjappa" target="_blank">
+        GitHub Profile
+      </a>
+    </p>
+
+  </div>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer>
+  <p>© 2026 Bhoomika N | Portfolio Website</p>
+</footer>
+
+
 
 </body>
 </html>
